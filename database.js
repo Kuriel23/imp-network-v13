@@ -1,5 +1,5 @@
 const { connect, Schema, model } = require("mongoose");
-async function connect() {
+async function connectDB() {
   await connect(process.env.db,
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
@@ -35,4 +35,4 @@ async function connect() {
   module.exports.Users = model("Users", UserSchema);
   module.exports.News = model("News", NewsSchema)
 }
-connect();
+connectDB();
