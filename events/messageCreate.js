@@ -61,7 +61,7 @@ module.exports = async (client, message) => {
     client.channels.cache.get("962798017726001203").send({
       content:
         "```" +
-        message.content.replace(/(@here|@everyone)/g, "").replace("```", "") +
+        message.content.replace(/(@here|@everyone)/g, "").replace("`", "") +
         "\nRep: <@" +
         message.author.id +
         ">``` <@" +
