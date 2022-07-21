@@ -66,8 +66,8 @@ module.exports = async (client, message) => {
         message.author.id +
         ">``` <@" +
         message.author.id +
-        ">",
-        components: [row]
+        "> <@&928334170143490159>",
+      components: [row],
     });
   }
 
