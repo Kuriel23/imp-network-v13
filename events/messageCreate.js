@@ -1,4 +1,3 @@
-const discord = require("discord.js");
 const superagent = require("superagent");
 const translate = require("@vitalets/google-translate-api");
 
