@@ -21,6 +21,11 @@ module.exports = async (client, message) => {
 
   if (message.author.bot) return 0;
 
+  if (message.channel.id === "1004061423476940851") {
+    message.react("1004065409969958925");
+    message.react("1004065368932896789");
+  }
+
   client.emit("checkMessage", message);
 
   if (message.channel.id === "962803914208600124") {
