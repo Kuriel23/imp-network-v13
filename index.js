@@ -52,7 +52,7 @@ setInterval(async () => {
           url: data.items[0].link
         })
         .setTitle("📰 Nova Notícia")
-        .addField("Título:", data.items[0].title)
+        .addFields([{name: "Título:", value: data.items[0].title}])
         .setImage(img)
         .setTimestamp()
         .setColor(client.cor);
